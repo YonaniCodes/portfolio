@@ -1,0 +1,184 @@
+ 
+
+section{
+    width: 800px;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+}
+
+ /* home styles */
+ #home{
+    height: 100vh;
+    padding-top: 170px;
+  }
+.home-container{
+    display: flex;
+    align-items: center;
+ justify-content: space-between;}
+ 
+.myphoto{
+    width: 300px;
+    border: 1px solid  var(--text-color);
+    border-radius: 200px;
+}
+.vertical-bar{
+    width: 5px;
+    background-color: var(--primary-color);
+    height: 300px;
+    color: var(--primary-color);
+ 
+}
+.my-name{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+.career-status,.career-desc{
+   font-weight: gray; 
+   font-size: 1rem;
+   margin-bottom: 3px;
+}
+.career-desc{
+  margin-bottom: 4rem;
+}
+.btn-link{ 
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding:  0.8rem 2rem;
+}
+
+
+/* about me styles */
+#about{
+    padding-top:  100px;
+}
+.about-grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4fr 6fr;
+} 
+ 
+.about-me{
+    width: 300px;  
+}
+.my-introduction, .My-Bio{
+color: var(--text-color);
+line-height: 16px;
+}
+.My-Bio{
+    font-size: 0.8rem ;
+}
+
+/* skills styles */
+#skills{
+    padding-top:  100px;
+
+}
+.skills-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skill {
+    background-color: rgb(97, 76, 201);
+    color: white;
+    padding: 10px 1rem;
+    border-radius: 6px;
+    margin: 6px 9px;
+    cursor: pointer;
+
+  }
+  .skill:hover {
+    /* // opacity: 0.5; */
+    color: black;
+  }
+
+
+  /* education stlye  */
+  #education{
+    padding-top:  100px;
+}
+
+  .education-path {
+    width: 600px;
+    margin: 1rem auto;
+  }
+  .education-data {
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+   }
+  .education-type{
+    text-align: center;
+    margin-bottom: 0.4rem;
+    color: var(--primary-color);
+  }
+  .education-date{
+   margin-top: 0.2rem;
+  }
+  .education-round {
+    width: 15px;
+    height: 15px;
+    border-radius: 13px;
+
+    background-color: var(--primary-color);
+  }
+  .education-line {
+    width: 1px;
+    height: 100%;
+    border-left: 2px solid var(--primary-color);
+  }
+  .time-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+ /* project stles... */
+ #projects{
+  padding-top: 100px ;
+ }
+ .project {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+}
+.thumbnail-container{
+margin-top: 1.5rem;
+width: 400px;
+height: 200px;
+  }
+.project-thumbnail {
+    width:  100%;
+    max-height: 100%;
+   }
+ .about-project{
+  margin-left: 2rem;
+ }
+ .project-desc{
+  margin-bottom: 2rem;
+ }
+ .project-link{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  }
+.pagination-container{
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+ }
+ .swipper{
+  margin-top: 1rem;
+  font-size: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+ }
+/* body{
+  background: rgb(13, 11, 32);
+  color: white;
+} */
+
+ 

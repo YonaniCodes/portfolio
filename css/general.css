@@ -1,0 +1,12 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: tahoma Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+   
+    --primary-color: rgb(97, 76, 201);
+    --botton-color: var(var(--primary-color));
+    --text-color: gray
+}

@@ -1,0 +1,11 @@
+.skill i {
+    display: none;
+    color: var(--primary-color)
+}
+/* preventing child elements from responding to parent's event */
+.skill i,span{
+         pointer-events: none;   
+}
+.skill:hover{
+    display: none;
+}

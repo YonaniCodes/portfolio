@@ -1,0 +1,15 @@
+footer {
+    margin-top: 4rem;
+     color: #fff;
+    padding: 20px;
+    text-align: center;
+ 
+    width: 100%;
+}
+
+/* Styling for the links within the footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}

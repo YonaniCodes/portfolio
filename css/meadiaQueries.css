@@ -22,20 +22,24 @@
         height: 200px   
        }
 }
-@media only screen and (max-width: 782px) { 
+@media only screen and (max-width: 669px) { 
   
     .myphoto{
         width: 180px;
         margin-right: 0.5rem;
     }
     .vertical-bar{
-         display: none;
+      width: 3px;
+      height: 180px;
 
+    }
+    .my-name{
+        margin-top: 1.6rem;
     }
   
   .btn-link{
     display: none;
-  }
+    }
     .about-grid{
     display: flex;
     flex-direction: column;
@@ -49,15 +53,17 @@
 @media only screen and (max-width: 570px) { 
     .home-container{
         flex-direction: column;
-     
     }
     .photo-container{
         display: flex;
       justify-content:center ;
-        border: 1px solid yellow;
+     }
+    .my-name{
+        font-size: 1.5rem;
     }
     .my-name,.career-status,.career-desc{
         text-align: center;
+        width: 100%;
     }
     .myphoto{
         width: 50%;
@@ -77,7 +83,24 @@
     }
  
 }
+@media only screen and (orientation: portrait) {
+    body {
+     }
+    #home{
+        height: unset;
+     }
+     #about,#skills,#education,#projects{
+        padding-top: unset;
+     }
 
+    
+     .skills-container{
+        justify-content: center;
+      
+       
+
+    }
+  }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 /* Medium devices (landscape tablets, 768px and up) */

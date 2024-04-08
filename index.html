@@ -23,7 +23,7 @@
     <!-- Header layout  -->
     <header class="hr-vr-center">
 
-        <a href="#home" class="myname">Yonas Awoke</a>
+        <a class="#home" class="myname">Yonas Awoke</a>
   
         <ul type="none" class="nav-menue hr-vr-center">
           <li><a href="#home" class="nav-link active-link">Home</a></li> 
@@ -40,7 +40,7 @@
     <main>
 
       <!-- home section layout -->
-      <section id="home">
+      <section class="section" id="home">
         <div class="home-container">
            <div class="photo-container">
             <img class="myphoto" src="assets/myphoto.jpg" alt="">
@@ -59,7 +59,7 @@
       </section>
 
      <!-- about me section layout -->
-      <section id="about">
+      <section class="section" id="about">
         <h4 class="hr-vr-center">About Me</h4>
            <p class="My-Bio hr-vr-center">My Bio</p>
         <div class="about-grid">
@@ -77,7 +77,7 @@
       </section>
        
       <!-- skills section layout -->
-      <section id="skills">
+      <section class="section" id="skills">
         <h2 class="hr-vr-center">Skills</h2>
         <p class="hr-vr-center">My Technical Skills</p>
         <div class="skills-container">
@@ -123,7 +123,7 @@
       </section>
 
        <!--  Education journey layout-->
-       <section id="education">
+       <section class="section" id="education">
         <h2 class="hr-vr-center">Education</h2>
         <p class="hr-vr-center ">My Journey</p>
         <div class="education-path">
@@ -198,7 +198,7 @@
        </section>
 
        <!-- projects layout -->
-       <section id="projects">
+       <section class="section" id="projects">
         <h3 class="hr-vr-center">Projects</h3>
         <div class="project-container">
     
@@ -246,7 +246,7 @@
     
         </div>
       </section>
-      <footer>
+      <section id="contact" class="section contact">
         <p>&copy; 2024 Your Name</p>
         <p>Connect with me:</p>
     
@@ -270,10 +270,18 @@
                   <i class="fa-solid fa-phone fa-shake fa-2xl"></i>   </a>
     
          <!-- Add more social media links or any other relevant links -->
-    </footer>
+       </section >
    
     </main>
+    <footer>
+      <a href="#home" class="nav-link active-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+      <a href="#about" class="nav-link "><i class="fa-solid fa-user">  </i><span>About</span></a>
+      <a href="#skills"class="nav-link "><i class="fa-solid fa-screwdriver-wrench"></i><span>Skills</span></a>
+      <a href="#projects" class="nav-link  "><i class="fa-solid fa-laptop"></i><span>Projects</span></a>
+      <a href="#education"class="nav-link  "><i class="fa-solid fa-graduation-cap"></i><span>Education</span></a>
+      <a href="#contact" class="nav-link "><i class="fa-solid fa-address-card"></i> <span>Contact</span></a>
  
+    </footer>
 
   </body>
 <script src="js/index.js"></script>

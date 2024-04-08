@@ -3,10 +3,23 @@
 const navLinks= document.querySelectorAll('.nav-link')
 navLinks.forEach(link=> link.addEventListener('click',showSection))
 function showSection(event){
+  const linkHref=event.target.href
+ const sectionId=linkHref.slice(33)
+ const section= document.getElementById(sectionId)
+ console.log(section)
+ section.style.display="block"
  navLinks.forEach(link=> link.classList.remove('active-link'))
  event.target.classList.add('active-link')
 }
 
+function hideAllSections(){
+  const sections= document.querySelectorAll('.section')
+  console.log(sections)
+   sections.forEach((section)=>{
+     section.style.display="none"
+  })
+ 
+}
 
 
 

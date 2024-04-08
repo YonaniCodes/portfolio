@@ -22,7 +22,7 @@ header {
   .nav-menue {
     width: 35%;
   }
-  header a{
+ .nav-link{
     text-decoration: none;
     color: black;
   }

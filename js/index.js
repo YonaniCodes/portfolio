@@ -3,6 +3,7 @@
 const navLinks= document.querySelectorAll('.nav-link')
 navLinks.forEach(link=> link.addEventListener('click',showSection))
 function showSection(event){
+  hideAllSections()
   const linkHref=event.target.href
  const sectionId=linkHref.slice(33)
  const section= document.getElementById(sectionId)

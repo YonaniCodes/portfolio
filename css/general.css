@@ -2,15 +2,17 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: tahoma Verdana, Geneva, Tahoma, sans-serif;
+     font-family: roboto; 
+     
 }
 :root{
    
     --primary-color: rgb(97, 76, 201);
     --botton-color: var(var(--primary-color));
-    --text-color: gray
+    --text-color: gray;
+    --dark-background-color: rgb(23, 20, 40)
 }
-/* body{
-    background-color: rgb(13, 11, 32);
-    font-size: large;
-  } */
+ .dark-theme{
+    background-color: var(--dark-background-color) ;
+    color: aliceblue;
+  }

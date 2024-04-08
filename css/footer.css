@@ -1,15 +1,16 @@
 footer {
     margin-top: 4rem;
-     color: #fff;
-    padding: 20px;
+    color: white;
+     padding: 20px;
     text-align: center;
- 
     width: 100%;
+    background-color: var(--primary-color);
+
 }
 
 /* Styling for the links within the footer */
 footer a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     margin: 0 10px;
 }

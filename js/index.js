@@ -22,7 +22,8 @@ const swippers= document.querySelectorAll('.swipper')
     }
     paginate('pro-0')
     function paginate(id){
-     let element = document.getElementById(id)
+ 
+    //  let element = document.getElementById(id)
      const projects= document.querySelectorAll('.project')
            projects.forEach((project)=>{
             project.style.display="none"

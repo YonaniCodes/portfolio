@@ -3,9 +3,24 @@
     color: var(--primary-color)
 }
 /* preventing child elements from responding to parent's event */
-.skill i,span{
+.skill i,.skill span{
          pointer-events: none;   
-}
+ }
 .skill:hover{
     display: none;
 }
+
+.btn-theme {
+  position: fixed;
+  right: 10rem;
+  top: 1.4rem;
+ }
+ .btn-theme:hover {color: var(--primary-color);
+
+ }
+ .fa-sun{
+    color: black
+ }
+ .fa-moon{
+    color: black
+ }

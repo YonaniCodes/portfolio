@@ -5,8 +5,8 @@ header {
     top: 0;
     height: 60px;
     background-color: white;
-    border: 1px solid gray;
-  }
+    /* background-color: var(--dark-background-color); */
+   }
   .hr-vr-center {
      display: flex;
     justify-content: space-around;

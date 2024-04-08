@@ -1,25 +1,26 @@
  
 
 section{
-    width: 800px;
-    /* border: 1px solid gray; */
+    width: 75%;
+    border: 1px solid gray;
     margin: 0 auto;
+    /* border: 1px solid white; */
 }
 
  /* home styles */
  #home{
     height: 100vh;
-    padding-top: 170px;
-  }
+    padding: 140px 0;
+    }
 .home-container{
     display: flex;
     align-items: center;
- justify-content: space-between;}
+    justify-content: space-around;
+  }
  
 .myphoto{
-    width: 300px;
-    border: 1px solid  var(--text-color);
-    border-radius: 200px;
+     width: 300px;
+     border-radius: 50%;
 }
 .vertical-bar{
     width: 5px;
@@ -29,17 +30,19 @@ section{
  
 }
 .my-name{
-    font-size: 2rem;
+     font-size: 2rem;
     font-weight: bolder;
     margin-bottom: 8px;
 }
 .career-status,.career-desc{
-   font-weight: gray; 
+   color: gray; 
    font-size: 1rem;
-   margin-bottom: 3px;
+}
+.career-status{
+margin-bottom: 1rem;
 }
 .career-desc{
-  margin-bottom: 4rem;
+  margin-bottom: 4rem ;
 }
 .btn-link{ 
     background-color: var(--primary-color);
@@ -79,20 +82,20 @@ line-height: 16px;
     margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 6rem;
+    border: 1px solid var(--primary-color);
+    position: relative;
   }
   .skill {
     background-color: rgb(97, 76, 201);
     color: white;
     padding: 10px 1rem;
-    border-radius: 6px;
+    border-radius: 6px; 
     margin: 6px 9px;
     cursor: pointer;
 
   }
-  .skill:hover {
-    /* // opacity: 0.5; */
-    color: black;
-  }
+
 
 
   /* education stlye  */
@@ -101,7 +104,7 @@ line-height: 16px;
 }
 
   .education-path {
-    width: 600px;
+    width: 60%;
     margin: 1rem auto;
   }
   .education-data {
@@ -113,9 +116,17 @@ line-height: 16px;
     margin-bottom: 0.4rem;
     color: var(--primary-color);
   }
-  .education-date{
-   margin-top: 0.2rem;
+  .education-place{
+    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+
   }
+  .education-date{
+    font-size: 0.8rem;
+    color: gray;
+    display: flex; 
+    justify-content: center;
+   }
   .education-round {
     width: 15px;
     height: 15px;
@@ -141,8 +152,7 @@ line-height: 16px;
  .project {
   display: flex;
   align-items: center;
-  border: 1px solid gray;
-}
+ }
 .thumbnail-container{
 margin-top: 1.5rem;
 width: 400px;
@@ -176,9 +186,6 @@ height: 200px;
   height: 12px;
   border-radius: 20px;
  }
-/* body{
-  background: rgb(13, 11, 32);
-  color: white;
-} */
+
 
  

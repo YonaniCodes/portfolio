@@ -1,16 +1,17 @@
-
-
 const navLinks= document.querySelectorAll('.nav-link')
 navLinks.forEach(link=> link.addEventListener('click',showSection))
 function showSection(event){
-  hideAllSections()
   const linkHref=event.target.href
- const sectionId=linkHref.slice(33)
+  console.log(linkHref)
+ const sectionId=linkHref.slice(Number(linkHref.indexOf("#"))+1 )
  const section= document.getElementById(sectionId)
  console.log(section)
+ hideAllSections()
  section.style.display="block"
  navLinks.forEach(link=> link.classList.remove('active-link'))
  event.target.classList.add('active-link')
+
+
 }
 
 function hideAllSections(){

@@ -2,7 +2,7 @@ const navLinks= document.querySelectorAll('.nav-link')
 navLinks.forEach(link=> link.addEventListener('click',showSection))
 function showSection(event){
   const linkHref=event.target.href
-  console.log(linkHref)
+console.log(Number(linkHref.indexOf("#"))+1 )
  const sectionId=linkHref.slice(Number(linkHref.indexOf("#"))+1 )
  const section= document.getElementById(sectionId)
  console.log(section)

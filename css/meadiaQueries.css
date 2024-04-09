@@ -48,6 +48,10 @@
     #about{
         padding-top:  200px;
     }
+    header .myname{
+        display: none;
+    }
+    
 }
 
 @media only screen and (max-width: 570px) { 
@@ -81,6 +85,7 @@
     flex-direction: column;
 
     }
+   
  
 }
 @media only screen and (orientation: portrait) {
@@ -105,6 +110,11 @@
        .fa-bars {
         display: block;
        }  
+       .btn-theme{
+        top: 1rem;
+        right: 1rem;
+
+       }
   }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 

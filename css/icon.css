@@ -11,20 +11,21 @@
 }
 
 .btn-theme {
-  position: fixed;
-  right: 5rem;
-  top: 1.4rem;
+    position: fixed;
+    right: 3rem;
+    top: 5rem;
  }
  .btn-theme:hover {color: var(--primary-color);
 
  }
  .fa-sun{
-    color: black
+    color: rgb(209, 163, 79)
  }
  .fa-moon{
     color: black
  }
  .fa-bars{
+   display: none;
    position: fixed;
    top: 1.45rem;
    left: 1rem;

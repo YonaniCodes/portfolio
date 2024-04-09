@@ -11,14 +11,15 @@ header {
     /* background-color: var(--dark-background-color); */
    }
  .nav-menue{
-    max-width:800px;
-    flex: 1;
-    display: flex;
-   justify-content: space-around;
-   align-items: center;   }
+       flex: 1;
+       max-width: 500px;
+       display: flex;
+      justify-content: space-between;
+     
+     }
   .hr-vr-center {
      display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 

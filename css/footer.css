@@ -38,7 +38,7 @@
     height: 200px;
  }
 
-.nav-link{
+.mobile-menue .nav-link{
     padding: 0.5rem 2rem;
 }
 .nav-link:hover{
@@ -54,4 +54,5 @@
      right: 4px;
      top: 10px;
      font-size: 1rem;
+     color: black;
   }

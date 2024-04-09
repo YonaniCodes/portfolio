@@ -3,8 +3,7 @@
 section{
     height: 100vh;
     width: 75%;
-    border: 1px solid gray;
-    margin: 0 auto;
+     margin: 0 auto;
     display: none;
     /* border: 1px solid white; */
 }

@@ -12,7 +12,14 @@
     --text-color: gray;
     --dark-background-color: rgb(23, 20, 40)
 }
- /* .dark-theme{
+ .dark-theme{
     background-color: var(--dark-background-color) ;
     color: aliceblue;
-  } */
+  }
+  .none-display{
+    display: none;
+  }
+
+  img{
+    z-index: 0;
+  }

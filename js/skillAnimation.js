@@ -30,3 +30,21 @@ function showSkillText(event){
   
    
 }
+
+
+
+// menue Bar
+const menuebar=document.querySelector('.fa-bars')
+menuebar.addEventListener('click',showNavMenu)
+function showNavMenu(){
+  document.querySelector('.mobile-menue').style.display='block'
+  menuebar.style.display='none'
+ 
+}
+const closBtn=document.querySelector('.close-btn')
+closBtn.addEventListener('click',closeNavMenu)
+function closeNavMenu(){
+  document.querySelector('.mobile-menue').style.display='none'
+  menuebar.style.display='block'
+}
+ 

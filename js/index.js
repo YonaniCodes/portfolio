@@ -6,8 +6,7 @@ console.log(Number(linkHref.indexOf("#"))+1 )
  const sectionId=linkHref.slice(Number(linkHref.indexOf("#"))+1 )
  const section= document.getElementById(sectionId)
  console.log(section)
- hideAllSections()
- section.style.display="block"
+  section.style.display="block"
  navLinks.forEach(link=> link.classList.remove('active-link'))
  event.target.classList.add('active-link')
 

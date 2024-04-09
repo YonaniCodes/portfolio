@@ -96,10 +96,15 @@
     
      .skills-container{
         justify-content: center;
-      
-       
-
     }
+  
+       header  {
+        display: none;
+
+       }
+       .fa-bars {
+        display: block;
+       }  
   }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 

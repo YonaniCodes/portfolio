@@ -5,8 +5,17 @@ header {
     top: 0;
     height: 60px;
     background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     /* background-color: var(--dark-background-color); */
    }
+ .nav-menue{
+    max-width:800px;
+    flex: 1;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;   }
   .hr-vr-center {
      display: flex;
     justify-content: space-around;
@@ -19,10 +28,8 @@ header {
   .active-link{
     color: var(--primary-color);
    }
-  .nav-menue {
-    width: 35%;
-  }
- .nav-link{
+ 
+ .nav-link, header a{
     text-decoration: none;
     color: black;
   }

@@ -2,7 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: roboto; 
+     font-family: roboto,Arial, Helvetica, sans-serif; 
      
 }
 :root{
@@ -22,4 +22,7 @@
 
   img{
     z-index: 0;
+  }
+  body{
+    position: relative;
   }

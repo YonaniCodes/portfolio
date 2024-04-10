@@ -30,7 +30,7 @@ header {
     color: var(--primary-color);
    }
  
- .nav-link, header a{
+ header .nav-link, header a{
     text-decoration: none;
     color: black;
   }

@@ -1,11 +1,19 @@
  
 
 section{
-    height: 100vh;
-    width: 75%;
+     width: 75%;
      margin: 0 auto;
-    display: none;
-    /* border: 1px solid white; */
+     /* border: 1px solid white; */
+}
+.section-title, 
+.section-subtitle,
+.center{
+  text-align: center;
+}
+.section-subtitle{
+  margin: 0.5rem 0;
+  color:gray;
+  font-size: 0.8rem; 
 }
 
  /* home styles */
@@ -67,84 +75,91 @@ margin-bottom: 1rem;
 .about-me{
     width: 300px;  
 }
-.my-introduction, .My-Bio{
-color: var(--text-color);
-line-height: 16px;
-}
-.My-Bio{
-    font-size: 0.8rem ;
-}
-
+ 
 /* skills styles */
 #skills{
     padding-top:  100px;
 
 }
 .skills-container {
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-   padding-bottom: 6rem;
-    border: 1px solid var(--primary-color);
-   }
-  .skill {
-    background-color: rgb(97, 76, 201);
-    color: white;
-    padding: 10px 1rem;
-    border-radius: 6px; 
-    margin: 6px 9px;
-    cursor: pointer;
-
-  }
-
-
-
-  /* education stlye  */
-  #education{
-    padding-top:  100px;
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+.skill {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  /* background-color: rgb(97, 76, 201); */
+  color: inherit;
+  padding: 1rem 1.3rem 1rem;
+  border-radius: 6px; 
+  margin: 6px 9px;
+  cursor: pointer;
+}
+.hr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-level{
+  color: var(--primary-color);
+  font-size: large;
+}
+.skill:hover{
+  background-color: lightgray;
+}
+.skill-name{
+  margin-bottom: 1.8rem;
 }
 
-  .education-path {
-    width: 60%;
-    margin: 1rem auto;
-  }
-  .education-data {
-    display: grid;
-    grid-template-columns: 4fr 2fr 4fr;
-   }
-  .education-type{
-    text-align: center;
-    margin-bottom: 0.4rem;
-    color: var(--primary-color);
-  }
-  .education-place{
-    margin-bottom: 1.2rem;
-    font-size: 0.9rem;
+  /* education stlye  */
+#education{
+  /* border: 1px solid gray; */
+  padding-top:  100px;
+}
 
+.education-path {
+  display: grid;
+   margin: 1rem auto;
+}
+.education-data {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  /* border: 1px solid white; */
   }
-  .education-date{
-    font-size: 0.8rem;
-    color: gray;
-    display: flex; 
-    justify-content: center;
-   }
-  .education-round {
-    width: 15px;
-    height: 15px;
-    border-radius: 13px;
+.education-type{
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  color: var(--primary-color);
+}
+.education-place{
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
 
-    background-color: var(--primary-color);
-  }
-  .education-line {
-    width: 1px;
-    height: 100%;
-    border-left: 2px solid var(--primary-color);
-  }
-  .time-line {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
+.education-date{
+  font-size: 0.8rem;
+  color: gray;
+  margin-right:8px;
+   }
+.education-round {
+  width: 15px;
+  height: 15px;
+  border-radius: 13px;
+
+  background-color: var(--primary-color);
+}
+.education-line {
+  width: 1px;
+  height: 100%;
+  border-left: 2px solid var(--primary-color);
+}
+.time-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
  /* project stles... */
  #projects{

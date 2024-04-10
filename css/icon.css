@@ -1,13 +1,5 @@
-.skill i {
-    display: none;
-    color: var(--primary-color)
-}
-/* preventing child elements from responding to parent's event */
-.skill i,.skill span{
-         pointer-events: none;   
- }
-.skill:hover{
-    display: none;
+I{
+    z-index: 0;
 }
 
 .btn-theme {
@@ -19,7 +11,7 @@
 
  }
  .fa-sun{
-    color: rgb(209, 163, 79)
+    color: rgb(209, 163, 79) !important
  }
  .fa-moon{
     color: black
@@ -29,5 +21,8 @@
    position: fixed;
    top: 1.45rem;
    left: 1rem;
-   color: black;
+   color: inherit;
+ }
+ .skill i{
+    color: gray;
  }

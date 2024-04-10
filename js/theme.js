@@ -1,10 +1,7 @@
 const theameBtn=document.querySelector('.btn-theme')
 theameBtn.addEventListener('click',toggleTheme)
-function toggleTheme(event){
-   
-     document.body.classList.toggle("dark-theme")?
-     
-     
+function toggleTheme(event){  
+    document.body.classList.toggle("dark-theme")?
     localStorage.setItem('theme','dark-theme'):
     localStorage.setItem('theme','light-theme')  
     changeThemeIcon()
@@ -13,6 +10,7 @@ function toggleTheme(event){
  window.onload=()=>{
     const previousTheme=localStorage.getItem('theme')
     document.body.classList.add(previousTheme)   
+    changeThemeIcon()
  }
  function changeThemeIcon(){
   if(localStorage.getItem('theme')==='dark-theme'){

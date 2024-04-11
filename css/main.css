@@ -1,10 +1,76 @@
- 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto,Arial, Helvetica, sans-serif; 
+  
+}
+:root{
 
+ --primary-color: rgb(97, 76, 201);
+ --botton-color: var(var(--primary-color));
+ --text-color: gray;
+ --dark-background-color: rgb(23, 20, 40)
+}
+
+.none-display{
+ display: none;
+}
+
+img{
+ z-index: 0;
+}
+body{
+ position: relative;
+}
+.dark-theme{
+  background-color: var(--dark-background-color) ;
+  color: aliceblue;
+ }
+
+/* header styel goes here */
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+.nav-menue{
+     flex: 1;
+     max-width: 500px;
+     display: flex;
+    justify-content: space-between; 
+}
+.hr-vr-center {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header a:hover{
+color: var(--primary-color);
+}
+.active-link{
+color: var(--primary-color);
+}
+
+header .nav-link, header a{
+text-decoration: none;
+color: black;
+cursor: pointer;
+}
+
+ /* general ssection style goes here */
 section{
      width: 75%;
      margin: 0 auto;
-     /* border: 1px solid white; */
-}
+ }
 .section-title, 
 .section-subtitle,
 .center{
@@ -71,7 +137,6 @@ margin-bottom: 1rem;
     align-items: center;
     grid-template-columns: 4fr 6fr;
 } 
- 
 .about-me{
     width: 300px;  
 }
@@ -79,17 +144,15 @@ margin-bottom: 1rem;
 /* skills styles */
 #skills{
     padding-top:  100px;
-
 }
 .skills-container {
      display: grid;
     grid-template-columns: 1fr 1fr;
-    }
+}
 .skill {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  /* background-color: rgb(97, 76, 201); */
   color: inherit;
   padding: 1rem 1.3rem 1rem;
   border-radius: 6px; 
@@ -114,8 +177,7 @@ margin-bottom: 1rem;
 
   /* education stlye  */
 #education{
-  /* border: 1px solid gray; */
-  padding-top:  100px;
+   padding-top:  100px;
 }
 
 .education-path {
@@ -164,16 +226,15 @@ margin-bottom: 1rem;
  /* project stles... */
  #projects{
   padding-top: 100px ;
+  width: 80%;
  }
  .project {
-  display: flex;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 300px 1fr;
   align-items: center;
  }
-.thumbnail-container{
-margin-top: 1.5rem;
-width: 400px;
-height: 200px;
-  }
+ 
 .project-thumbnail {
     width:  100%;
     max-height: 100%;
@@ -181,14 +242,25 @@ height: 200px;
  .about-project{
   margin-left: 2rem;
  }
- .project-desc{
-  margin-bottom: 2rem;
+ .project-title{
+  font-size: 1.3rem;
  }
+ .project-desc{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: gray;
+  }
  .project-link{
   background-color: var(--primary-color);
   color: white;
   padding: 0.4rem 1rem;
   text-decoration: none;
+  text-align: center;
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+
+
   }
 .pagination-container{
   display: flex;
@@ -201,8 +273,110 @@ height: 200px;
   width: 12px;
   height: 12px;
   border-radius: 20px;
+  margin-left: 0.7rem;
  }
 
+ i{
+  z-index: 0;
+}
+.btn-theme {
+   position: fixed;
+   right: 3rem;
+   top: 5rem;
+   cursor: pointer;
+
+}
+.btn-theme:hover {color: var(--primary-color);
+
+}
+.fa-sun{
+   color: rgb(209, 163, 79) !important
+}
+.fa-moon{
+   color: black
+}
+.fa-bars{
+  display: none;
+  position: fixed;
+  top: 1.45rem;
+  left: 1rem;
+  color: inherit;
+}
+.skill i{
+   color: gray;
+}
+ /* contact me style  goes here */
+ #contact{
+  margin-top: 4.5rem;
+ }
+ .contact-grid{
+  margin: 4rem auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+ }
+ 
+ input{
+  padding: 4px;
+  outline: none;
+  height: 40px ;
+  width: 100%;
+  margin: 0.5rem 0;
+ }
+ textarea{
+  width:100% ;
+  padding: 4px;
+   }
+   input[type='submit']{
+    
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    width: 40%;
+    font-size: large;
+    display: block;
+    margin: 0.5rem auto;
+   }
+
+.contact-grid i{
+  color: var(--primary-color);
+}
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.contact-info p{
+  font-size: 0.9rem;
+  color: gray;
+  margin-top: 2px;
+}
+
+
+/* footer styling goes here */
+footer {
+  padding-top: 1rem;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 130px;
+  background-color: var(--primary-color);
+
+}
+.connect-with-me{
+margin-top: 1rem;
+}
+
+/* Styling for icons within the footer */
+footer i {
+   color: white;
+   text-decoration: none;
+   margin-top: 1rem  ;
+   margin-left: 1rem;
+   font-size: 1.5rem;
+}
  
 
  
